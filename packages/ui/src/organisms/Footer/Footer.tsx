@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import type { NavItem, SocialLink } from "../../types";
+import type { NavItem } from "../../types";
 
 export interface FooterProps {
   logo?: { src: string; alt: string; width?: number; height?: number };
@@ -15,34 +15,7 @@ export interface FooterProps {
   officeAddress?: string;
   companyInfo?: string;
   navItems?: NavItem[];
-  socialLinks?: SocialLink[];
 }
-
-const SOCIAL_ICONS: Record<string, React.ReactNode> = {
-  facebook: (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-    </svg>
-  ),
-  linkedin: (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
-      <circle cx="4" cy="4" r="2" />
-    </svg>
-  ),
-  twitter: (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-    </svg>
-  ),
-  instagram: (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-      <circle cx="12" cy="12" r="4" />
-      <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none" />
-    </svg>
-  ),
-};
 
 const DEFAULT_NAV: NavItem[] = [
   { label: "About", href: "/" },
@@ -52,13 +25,6 @@ const DEFAULT_NAV: NavItem[] = [
   { label: "Contact", href: "/contact" },
   { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Terms of Service", href: "/terms-of-service" },
-];
-
-const DEFAULT_SOCIALS: SocialLink[] = [
-  { platform: "facebook", url: "https://facebook.com", label: "Facebook" },
-  { platform: "linkedin", url: "https://linkedin.com", label: "LinkedIn" },
-  { platform: "twitter", url: "https://twitter.com", label: "Twitter" },
-  { platform: "instagram", url: "https://instagram.com", label: "Instagram" },
 ];
 
 export function Footer({
@@ -71,7 +37,6 @@ export function Footer({
   officeAddress = "167-169 Great Portland Street, 5th Floor, London W1W 5PF",
   companyInfo = "Reputation Experts Ltd - Company No. 16939732 - Registered in England & Wales",
   navItems = DEFAULT_NAV,
-  socialLinks = DEFAULT_SOCIALS,
 }: FooterProps) {
   const year = new Date().getFullYear();
   const copyrightText = copyright ?? `© ${year} Reputation Experts. All rights reserved.`;
@@ -132,7 +97,7 @@ export function Footer({
             {phone && (
               <a
                 href={phoneHref}
-                className="inline-flex items-center gap-2 text-[#1a1a1a] text-[13px] font-medium hover:text-[#444] transition-colors mb-5"
+                className="inline-flex items-center gap-2 text-[#1a1a1a] text-[13px] font-medium hover:text-[#444] transition-colors"
               >
                 {/* Phone icon */}
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -140,24 +105,7 @@ export function Footer({
                 </svg>
                 {phone}
               </a>
-            )}
-
-            {/* Social icons */}
-            <div className="flex items-center gap-2">
-              {socialLinks.map((s) => (
-                <a
-                  key={s.platform}
-                  href={s.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={s.label ?? s.platform}
-                  className="w-8 h-8 rounded-full border border-[#e0e0e0] flex items-center justify-center text-[#888] hover:text-[#1a1a1a] hover:border-[#999] transition-colors"
-                >
-                  {SOCIAL_ICONS[s.platform]}
-                </a>
-              ))}
-            </div>
-          </div>
+            )}          </div>
 
           {/* Right: nav links */}
           <nav className="flex flex-wrap gap-x-6 gap-y-3 lg:justify-end lg:max-w-[600px]" aria-label="Footer navigation">
