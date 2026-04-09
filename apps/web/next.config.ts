@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  basePath: "/dental-clinics",
   transpilePackages: ["@repute/ui"],
   images: {
     remotePatterns: [
