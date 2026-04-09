@@ -1,6 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  basePath: "/dental-clinics",
   transpilePackages: ["@repute/ui"],
   images: {
     remotePatterns: [
@@ -15,7 +16,6 @@ const nextConfig: NextConfig = {
       { protocol: "https", hostname: "**.cloudinary.com" },
     ],
   },
-
 };
 
 export default nextConfig;
