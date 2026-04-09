@@ -3,14 +3,10 @@
 import React from "react";
 import styles from "./PlatformsMediaSection.module.css";
 
-/* ─── SVG Logos ───────────────────────────────────────────────────────── */
+/* âââ SVG Logos âââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
 
 const CBSLogo = () => (
-  <svg width="68" height="24" viewBox="0 0 136 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="20" cy="20" r="17" stroke="#1a1a1a" strokeWidth="2.2" fill="none" />
-    <ellipse cx="20" cy="20" rx="7" ry="11" fill="#1a1a1a" />
-    <text x="46" y="29" fontFamily="Arial, sans-serif" fontWeight="bold" fontSize="26" fill="#1a1a1a">CBS</text>
-  </svg>
+  <img src="/images/cbs-logo.svg" alt="CBS" width={68} height={24} style={{ objectFit: "contain" }} />
 );
 
 const BBCLogo = () => (
@@ -22,10 +18,14 @@ const BBCLogo = () => (
 );
 
 const FOXNewsLogo = () => (
-  <div className="flex flex-col items-center leading-none">
-    <span className="text-[17px] font-black italic text-[#003366] tracking-[-0.03em] leading-none" style={{ fontFamily: "Arial Black, sans-serif" }}>FOX</span>
-    <span className="text-[8px] font-bold text-[#c8102e] tracking-[0.08em] uppercase leading-none mt-[1px]" style={{ fontFamily: "Arial, sans-serif" }}>NEWS</span>
-    <span className="text-[5.5px] text-[#c8102e] italic leading-none mt-[1px]" style={{ fontFamily: "Arial, sans-serif" }}>channel</span>
+  <div className="flex flex-col items-center leading-none rounded-[2px] overflow-hidden" style={{ width: 48 }}>
+    <div className="w-full bg-[#003366] flex flex-col items-center py-[3px] px-[4px] relative">
+      <span className="text-[14px] font-black italic text-white tracking-[-0.03em] leading-none" style={{ fontFamily: "Arial Black, sans-serif" }}>FOX</span>
+      <span className="text-[8px] font-bold text-white tracking-[0.06em] uppercase leading-none mt-[1px]" style={{ fontFamily: "Arial, sans-serif" }}>NEWS</span>
+    </div>
+    <div className="w-full bg-[#c8102e] flex items-center justify-center py-[1.5px]">
+      <span className="text-[5.5px] text-white font-bold tracking-[0.05em] leading-none" style={{ fontFamily: "Arial, sans-serif" }}>channel</span>
+    </div>
   </div>
 );
 
@@ -37,20 +37,31 @@ const BusinessInsiderLogo = () => (
 );
 
 const NBCLogo = () => (
-  <svg width="28" height="28" viewBox="0 0 48 48" fill="none">
-    <ellipse cx="16" cy="10" rx="4.5" ry="9" fill="#e4002b" transform="rotate(-30 16 10)" />
-    <ellipse cx="10" cy="20" rx="4.5" ry="9" fill="#ff6600" transform="rotate(-75 10 20)" />
-    <ellipse cx="16" cy="34" rx="4.5" ry="9" fill="#009639" transform="rotate(30 16 34)" />
-    <ellipse cx="32" cy="34" rx="4.5" ry="9" fill="#0089d0" transform="rotate(-30 32 34)" />
-    <ellipse cx="38" cy="20" rx="4.5" ry="9" fill="#6460aa" transform="rotate(75 38 20)" />
-    <ellipse cx="32" cy="10" rx="4.5" ry="9" fill="#ffb612" transform="rotate(30 32 10)" />
+  <svg width="28" height="28" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    {/* Yellow feather */}
+    <path d="M68 170C50 150 45 115 55 90L100 115Z" fill="#FFCD00" />
+    {/* Orange feather */}
+    <path d="M35 125C30 100 40 70 60 50L100 115Z" fill="#FF6600" />
+    {/* Red feather */}
+    <path d="M50 65C65 42 90 28 115 30L100 115Z" fill="#E4002B" />
+    {/* Purple feather */}
+    <path d="M130 30C155 28 178 42 193 65L100 115Z" fill="#7A3B9E" />
+    {/* Blue feather */}
+    <path d="M205 50C225 70 235 100 230 125L100 115Z" fill="#0089D0" />
+    {/* Green feather */}
+    <path d="M210 90C220 115 215 150 197 170L100 115Z" fill="#009A44" />
+    {/* Peacock head */}
+    <path d="M120 85C120 75 112 68 102 68C92 68 84 75 84 85L100 115Z" fill="#1a1a1a" />
   </svg>
 );
 
 const DigitalJournalLogo = () => (
-  <div className="flex items-center gap-[2px]">
-    <span className="bg-[#c8102e] text-white text-[7.5px] font-bold px-[3px] py-[2px] leading-none rounded-[1px]">DIGITAL</span>
-    <span className="bg-[#c8102e] text-white text-[7.5px] font-bold px-[3px] py-[2px] leading-none rounded-[1px]">JOURNAL</span>
+  <div className="flex items-start gap-[3px]">
+    <span className="inline-block w-[10px] h-[12px] bg-[#b91c1c] rounded-[1px] mt-[2px] flex-shrink-0" />
+    <div className="flex flex-col leading-none" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
+      <span className="text-[11px] font-bold text-[#1a1a1a] tracking-[-0.01em] leading-[1.1]">DIGITAL</span>
+      <span className="text-[11px] font-bold text-[#1a1a1a] tracking-[-0.01em] leading-[1.1]">JOURNAL</span>
+    </div>
   </div>
 );
 
@@ -60,7 +71,7 @@ const ArrowUpRight = () => (
   </svg>
 );
 
-/* ─── Card overlay content (same as AwardsStrip homepage) ────────────── */
+/* âââ Card overlay content (same as AwardsStrip homepage) ââââââââââââââ */
 
 const ReddotOverlay = () => (
   <div className="flex items-center gap-3">
@@ -92,7 +103,7 @@ const FintechTimesOverlay = () => (
   </div>
 );
 
-/* ─── Data ────────────────────────────────────────────────────────────── */
+/* âââ Data ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
 
 const MENTIONS = [
   { logo: <CBSLogo />, name: "CBS", url: "#" },
@@ -118,7 +129,7 @@ const MEDIA_IMAGES = [
   { src: "/images/media-11.png", alt: "Media partner 11" },
 ];
 
-/* ─── Media card — white bg + dark overlay by default, image + white overlay on hover ── */
+/* âââ Media card â white bg + dark overlay by default, image + white overlay on hover ââ */
 
 function MediaCardItem({ image, overlay, url }: { image: string; overlay: React.ReactNode; url: string }) {
   const [hovered, setHovered] = React.useState(false);
@@ -147,7 +158,7 @@ function MediaCardItem({ image, overlay, url }: { image: string; overlay: React.
   );
 }
 
-/* ─── Component ───────────────────────────────────────────────────────── */
+/* âââ Component âââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
 
 export function PlatformsMediaSection() {
   return (
@@ -158,14 +169,14 @@ export function PlatformsMediaSection() {
     >
       <div className="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-10">
 
-        {/* ── Heading ─────────────────────────────────────────────── */}
+        {/* ââ Heading âââââââââââââââââââââââââââââââââââââââââââââââ */}
         <h2
           className="text-[#1a1a1a] font-medium text-[clamp(1.75rem,3.2vw,2.5rem)] leading-[1.15] tracking-[-0.02em] mb-8 lg:mb-10"
         >
           Platforms &amp; Media Outlets
         </h2>
 
-        {/* ── 3-column grid (mentions + 2 card cols) ─────────────── */}
+        {/* ââ 3-column grid (mentions + 2 card cols) âââââââââââââââ */}
         <div className={styles.grid}>
 
           {/* Left: mention list */}
@@ -192,7 +203,7 @@ export function PlatformsMediaSection() {
           </div>
         </div>
 
-        {/* ── Media Partners carousel ──────────────────────────────── */}
+        {/* ââ Media Partners carousel ââââââââââââââââââââââââââââââââ */}
         <div className="mt-14 lg:mt-16">
           <h3 className="text-[#1a1a1a] text-[clamp(1.75rem,3.2vw,2.5rem)] font-medium tracking-[-0.02em] mb-6">
             Media Partners
