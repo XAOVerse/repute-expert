@@ -133,6 +133,10 @@
   color: white;
 }
 
+.contentOnHover img {
+  filter: brightness(0) invert(1);
+}
+
 .arrowBadge {
   position: absolute;
   top: 12px;
