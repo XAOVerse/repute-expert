@@ -1,19 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="200" height="80">
-  <!-- NBC Peacock feathers -->
-  <g transform="translate(30, 40)">
-    <!-- Yellow feather -->
-    <path d="M0,-2 Q-2,-18 8,-30 Q12,-18 10,-2 Z" fill="#FFCD00" transform="rotate(-60, 5, -16)"/>
-    <!-- Orange feather -->
-    <path d="M0,-2 Q-2,-18 8,-30 Q12,-18 10,-2 Z" fill="#FF6E19" transform="rotate(-36, 5, -16)"/>
-    <!-- Red feather -->
-    <path d="M0,-2 Q-2,-18 8,-30 Q12,-18 10,-2 Z" fill="#E4002B" transform="rotate(-12, 5, -16)"/>
-    <!-- Purple feather -->
-    <path d="M0,-2 Q-2,-18 8,-30 Q12,-18 10,-2 Z" fill="#8C3FC5" transform="rotate(12, 5, -16)"/>
-    <!-- Blue feather -->
-    <path d="M0,-2 Q-2,-18 8,-30 Q12,-18 10,-2 Z" fill="#0089D0" transform="rotate(36, 5, -16)"/>
-    <!-- Green feather -->
-    <path d="M0,-2 Q-2,-18 8,-30 Q12,-18 10,-2 Z" fill="#00953B" transform="rotate(60, 5, -16)"/>
-  </g>
-  <!-- NBC text -->
-  <text x="70" y="52" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="36" fill="#1a1a1a" letter-spacing="2">NBC</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" width="360" height="200">
+  <!-- NBC Peacock Logo - transparent background -->
+  <!-- Left feathers (bottom to top): yellow, orange, red -->
+  <path d="M62,190 C30,160 10,110 40,60 C50,42 65,30 80,28 C60,70 58,130 62,190 Z" fill="#FFC20E"/>
+  <path d="M72,178 C42,140 32,90 62,42 C72,26 88,16 105,18 C78,52 68,110 72,178 Z" fill="#F37021"/>
+  <path d="M88,162 C64,128 58,78 88,32 C100,14 118,6 136,10 C104,40 86,94 88,162 Z" fill="#ED1C24"/>
+
+  <!-- Right feathers (top to bottom): purple, blue, green -->
+  <path d="M152,10 C170,6 188,14 200,32 C230,78 224,128 200,162 C202,94 184,40 152,10 Z" fill="#6460AA"/>
+  <path d="M183,18 C200,16 216,26 226,42 C256,90 246,140 216,178 C220,110 210,52 183,18 Z" fill="#00A4E4"/>
+  <path d="M208,28 C223,30 238,42 248,60 C278,110 258,160 226,190 C230,130 228,70 208,28 Z" fill="#00A850"/>
+
+  <!-- Peacock head (negative space bird head facing right) -->
+  <path d="M144,28 C148,28 156,32 162,40 C168,50 168,62 160,72 C170,68 178,58 178,46 C178,30 164,18 148,18 C144,18 140,20 138,24 C140,25 142,27 144,28 Z" fill="#1a1a1a"/>
 </svg>
