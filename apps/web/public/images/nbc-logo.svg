@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="200" height="80">
+  <!-- NBC Peacock feathers -->
+  <g transform="translate(30, 40)">
+    <!-- Yellow feather -->
+    <path d="M0,-2 Q-2,-18 8,-30 Q12,-18 10,-2 Z" fill="#FFCD00" transform="rotate(-60, 5, -16)"/>
+    <!-- Orange feather -->
+    <path d="M0,-2 Q-2,-18 8,-30 Q12,-18 10,-2 Z" fill="#FF6E19" transform="rotate(-36, 5, -16)"/>
+    <!-- Red feather -->
+    <path d="M0,-2 Q-2,-18 8,-30 Q12,-18 10,-2 Z" fill="#E4002B" transform="rotate(-12, 5, -16)"/>
+    <!-- Purple feather -->
+    <path d="M0,-2 Q-2,-18 8,-30 Q12,-18 10,-2 Z" fill="#8C3FC5" transform="rotate(12, 5, -16)"/>
+    <!-- Blue feather -->
+    <path d="M0,-2 Q-2,-18 8,-30 Q12,-18 10,-2 Z" fill="#0089D0" transform="rotate(36, 5, -16)"/>
+    <!-- Green feather -->
+    <path d="M0,-2 Q-2,-18 8,-30 Q12,-18 10,-2 Z" fill="#00953B" transform="rotate(60, 5, -16)"/>
+  </g>
+  <!-- NBC text -->
+  <text x="70" y="52" font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="36" fill="#1a1a1a" letter-spacing="2">NBC</text>
+</svg>
