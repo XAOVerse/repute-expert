@@ -56,8 +56,8 @@ const ArrowUpRight = () => (
 
 const APOverlay = () => (
   <div className="flex items-center justify-center w-full h-full" style={{ position: "relative" }}>
-    <img src="/images/ap-logo.svg" alt="Associated Press" className={styles.apLogoBlack} style={{ width: 280, height: 80, objectFit: "contain" }} />
-    <img src="/images/ap-logo-white.svg" alt="Associated Press" className={styles.apLogoWhite} style={{ width: 280, height: 80, objectFit: "contain", position: "absolute" }} />
+    <img src="/images/ap-logo.svg" alt="Associated Press" className={styles.apLogoBlack} style={{ width: 390, height: 110, objectFit: "contain" }} />
+    <img src="/images/ap-logo-white.svg" alt="Associated Press" className={styles.apLogoWhite} style={{ width: 390, height: 110, objectFit: "contain", position: "absolute" }} />
   </div>
 );
 const JEOverlay = () => (
