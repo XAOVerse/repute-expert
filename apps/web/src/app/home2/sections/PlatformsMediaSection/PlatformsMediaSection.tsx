@@ -55,8 +55,9 @@ const ArrowUpRight = () => (
 /* âââ Card overlay content (same as AwardsStrip homepage) ââââââââââââââ */
 
 const APOverlay = () => (
-  <div className="flex items-center justify-center w-full h-full">
-    <img src="/images/ap-logo.svg" alt="Associated Press" style={{ width: 160, height: 64, objectFit: "contain", filter: "brightness(0)", transition: "filter 0.3s ease" }} />
+  <div className="flex items-center justify-center w-full h-full" style={{ position: "relative" }}>
+    <img src="/images/ap-logo.svg" alt="Associated Press" className={styles.apLogoBlack} style={{ width: 280, height: 80, objectFit: "contain" }} />
+    <img src="/images/ap-logo-white.svg" alt="Associated Press" className={styles.apLogoWhite} style={{ width: 280, height: 80, objectFit: "contain", position: "absolute" }} />
   </div>
 );
 const JEOverlay = () => (
