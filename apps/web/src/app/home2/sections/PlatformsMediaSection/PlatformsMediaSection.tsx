@@ -6,7 +6,7 @@ import styles from "./PlatformsMediaSection.module.css";
 /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ SVG Logos ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 
 const CBSLogo = () => (
-  <img src="/images/cbs-logo.svg" alt="CBS" width={68} height={24} style={{ objectFit: "contain" }} />
+  <img src="/images/cbs-logo.svg" alt="CBS" style={{ width: 28, height: 28, objectFit: "contain" }} />
 );
 
 const BBCLogo = () => (
@@ -18,13 +18,13 @@ const BBCLogo = () => (
 );
 
 const FOXNewsLogo = () => (
-  <div className="flex flex-col items-center leading-none rounded-[2px] overflow-hidden" style={{ width: 48 }}>
-    <div className="w-full bg-[#003366] flex flex-col items-center py-[3px] px-[4px] relative">
-      <span className="text-[14px] font-black italic text-white tracking-[-0.03em] leading-none" style={{ fontFamily: "Arial Black, sans-serif" }}>FOX</span>
-      <span className="text-[8px] font-bold text-white tracking-[0.06em] uppercase leading-none mt-[1px]" style={{ fontFamily: "Arial, sans-serif" }}>NEWS</span>
+  <div className="flex flex-col items-center leading-none rounded-[2px] overflow-hidden" style={{ width: 38 }}>
+    <div className="w-full bg-[#003366] flex flex-col items-center py-[2px] px-[3px] relative">
+      <span className="text-[11px] font-black italic text-white tracking-[-0.03em] leading-none" style={{ fontFamily: "Arial Black, sans-serif" }}>FOX</span>
+      <span className="text-[6.5px] font-bold text-white tracking-[0.06em] uppercase leading-none mt-[1px]" style={{ fontFamily: "Arial, sans-serif" }}>NEWS</span>
     </div>
-    <div className="w-full bg-[#c8102e] flex items-center justify-center py-[1.5px]">
-      <span className="text-[5.5px] text-white font-bold tracking-[0.05em] leading-none" style={{ fontFamily: "Arial, sans-serif" }}>channel</span>
+    <div className="w-full bg-[#c8102e] flex items-center justify-center py-[1px]">
+      <span className="text-[4.5px] text-white font-bold tracking-[0.05em] leading-none" style={{ fontFamily: "Arial, sans-serif" }}>channel</span>
     </div>
   </div>
 );
