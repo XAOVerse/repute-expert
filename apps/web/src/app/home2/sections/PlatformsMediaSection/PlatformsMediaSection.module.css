@@ -133,16 +133,22 @@
   color: white;
 }
 
+.apLogoBlack {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
 .apLogoWhite {
-  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .contentOnHover .apLogoBlack {
-  display: none;
+  opacity: 0;
 }
 
 .contentOnHover .apLogoWhite {
-  display: block;
+  opacity: 1;
 }
 
 .arrowBadge {
