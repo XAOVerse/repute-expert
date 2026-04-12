@@ -56,7 +56,7 @@ const ArrowUpRight = () => (
 
 const APOverlay = () => (
   <div className="flex items-center justify-center w-full h-full">
-    <img src="/images/ap-logo.svg" alt="Associated Press" className="w-40 h-16 object-contain brightness-0 group-hover:brightness-0 group-hover:invert transition-all duration-300" />
+    <img src="/images/ap-logo.svg" alt="Associated Press" style={{ width: 160, height: 64, objectFit: "contain", filter: "brightness(0)", transition: "filter 0.3s ease" }} />
   </div>
 );
 const JEOverlay = () => (
