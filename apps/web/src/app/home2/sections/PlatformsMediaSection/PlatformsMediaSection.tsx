@@ -104,7 +104,7 @@ const MEDIA_IMAGES = [
 
 /* âââ Media card â white bg + dark overlay by default, image + white overlay on hover ââ */
 
-function MediaCardItem({ image, overlay, url }: { image: string; overlay: React.ReactNode; url: string }) {
+function MediaCardItem({ image, overlay, url }: { image?: string; overlay: React.ReactNode; url: string }) {
   const [hovered, setHovered] = React.useState(false);
   return (
     <a
