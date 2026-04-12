@@ -3,7 +3,7 @@
 import React from "react";
 import styles from "./PlatformsMediaSection.module.css";
 
-/* âââ SVG Logos âââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ SVG Logos Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
 
 const CBSLogo = () => (
   <img src="/images/cbs-logo.svg" alt="CBS" width={68} height={24} style={{ objectFit: "contain" }} />
@@ -52,7 +52,7 @@ const ArrowUpRight = () => (
   </svg>
 );
 
-/* âââ Card overlay content (same as AwardsStrip homepage) ââââââââââââââ */
+/* Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Card overlay content (same as AwardsStrip homepage) Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
 
 const APOverlay = () => (
   <div className="flex items-center justify-center w-full h-full" style={{ position: "relative" }}>
@@ -60,9 +60,10 @@ const APOverlay = () => (
     <img src="/images/ap-logo-white.svg" alt="Associated Press" className={styles.apLogoWhite} style={{ width: 460, height: 130, objectFit: "contain", position: "absolute" }} />
   </div>
 );
-const JEOverlay = () => (
-  <div className="w-[90px] h-[90px] rounded-full bg-[#1a1a1a] flex items-center justify-center">
-    <span className="text-white text-[32px]" style={{ fontFamily: "Georgia, serif" }}>JE</span>
+const BloombergOverlay = () => (
+  <div className="flex items-center justify-center w-full h-full" style={{ position: "relative" }}>
+    <img src="/images/bloomberg-logo-black.svg" alt="Bloomberg" className={styles.apLogoBlack} style={{ width: 200, height: 40, objectFit: "contain" }} />
+    <img src="/images/bloomberg-logo-white.svg" alt="Bloomberg" className={styles.apLogoWhite} style={{ width: 200, height: 40, objectFit: "contain", position: "absolute" }} />
   </div>
 );
 
@@ -81,7 +82,7 @@ const FintechTimesOverlay = () => (
   </div>
 );
 
-/* âââ Data ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Data Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
 
 const MENTIONS = [
   { logo: <CBSLogo />, name: "CBS", url: "#" },
@@ -106,7 +107,7 @@ const MEDIA_IMAGES = [
   { src: "/images/media-11.png", alt: "Media partner 11" },
 ];
 
-/* âââ Media card â white bg + dark overlay by default, image + white overlay on hover ââ */
+/* Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Media card Ã¢ÂÂ white bg + dark overlay by default, image + white overlay on hover Ã¢ÂÂÃ¢ÂÂ */
 
 function MediaCardItem({ image, overlay, url }: { image?: string; overlay: React.ReactNode; url: string }) {
   const [hovered, setHovered] = React.useState(false);
@@ -135,7 +136,7 @@ function MediaCardItem({ image, overlay, url }: { image?: string; overlay: React
   );
 }
 
-/* âââ Component âââââââââââââââââââââââââââââââââââââââââââââââââââââââââ */
+/* Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂ Component Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */
 
 export function PlatformsMediaSection() {
   return (
@@ -146,14 +147,14 @@ export function PlatformsMediaSection() {
     >
       <div className="max-w-[1280px] mx-auto px-5 sm:px-6 lg:px-10">
 
-        {/* ââ Heading âââââââââââââââââââââââââââââââââââââââââââââââ */}
+        {/* Ã¢ÂÂÃ¢ÂÂ Heading Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */}
         <h2
           className="text-[#1a1a1a] font-medium text-[clamp(1.75rem,3.2vw,2.5rem)] leading-[1.15] tracking-[-0.02em] mb-8 lg:mb-10"
         >
           Platforms &amp; Media Outlets
         </h2>
 
-        {/* ââ 3-column grid (mentions + 2 card cols) âââââââââââââââ */}
+        {/* Ã¢ÂÂÃ¢ÂÂ 3-column grid (mentions + 2 card cols) Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */}
         <div className={styles.grid}>
 
           {/* Left: mention list */}
@@ -170,7 +171,7 @@ export function PlatformsMediaSection() {
           {/* Middle col: 2 media cards */}
           <div className={styles.cardsCol}>
             <MediaCardItem image="/images/image-1.webp" overlay={<APOverlay />} url="#" />
-            <MediaCardItem image="/images/image-2.webp" overlay={<JEOverlay />} url="#" />
+            <MediaCardItem image="/images/image-2.webp" overlay={<BloombergOverlay />} url="#" />
           </div>
 
           {/* Right col: 2 media cards */}
@@ -180,7 +181,7 @@ export function PlatformsMediaSection() {
           </div>
         </div>
 
-        {/* ââ Media Partners carousel ââââââââââââââââââââââââââââââââ */}
+        {/* Ã¢ÂÂÃ¢ÂÂ Media Partners carousel Ã¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂÃ¢ÂÂ */}
         <div className="mt-14 lg:mt-16">
           <h3 className="text-[#1a1a1a] text-[clamp(1.75rem,3.2vw,2.5rem)] font-medium tracking-[-0.02em] mb-6">
             Media Partners
