@@ -56,7 +56,7 @@ const ArrowUpRight = () => (
 
 const APOverlay = () => (
   <div className="flex items-center justify-center w-full h-full">
-    <img src="/images/ap-logo.svg" alt="Associated Press" className="w-32 h-32 object-contain" />
+    <img src="/images/ap-logo.svg" alt="Associated Press" className="w-40 h-16 object-contain brightness-0 group-hover:brightness-0 group-hover:invert transition-all duration-300" />
   </div>
 );
 const JEOverlay = () => (
@@ -165,7 +165,7 @@ export function PlatformsMediaSection() {
 
           {/* Middle col: 2 media cards */}
           <div className={styles.cardsCol}>
-            <MediaCardItem overlay={<APOverlay />} url="#" />
+            <MediaCardItem image="/images/image-1.webp" overlay={<APOverlay />} url="#" />
             <MediaCardItem image="/images/image-2.webp" overlay={<JEOverlay />} url="#" />
           </div>
 
