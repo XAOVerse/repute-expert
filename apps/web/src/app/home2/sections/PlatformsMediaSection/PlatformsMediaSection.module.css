@@ -133,8 +133,16 @@
   color: white;
 }
 
-.contentOnHover img {
-  filter: brightness(0) invert(1);
+.apLogoWhite {
+  display: none;
+}
+
+.contentOnHover .apLogoBlack {
+  display: none;
+}
+
+.contentOnHover .apLogoWhite {
+  display: block;
 }
 
 .arrowBadge {
