@@ -54,18 +54,11 @@ const ArrowUpRight = () => (
 
 /* âââ Card overlay content (same as AwardsStrip homepage) ââââââââââââââ */
 
-const ReddotOverlay = () => (
-  <div className="flex items-center gap-3">
-    <svg width="44" height="44" viewBox="0 0 80 80" fill="none">
-      <circle cx="40" cy="40" r="36" stroke="currentColor" strokeWidth="2" />
-      {[0, 1, 2, 3, 4].map((i) => (
-        <ellipse key={i} cx="40" cy={18 + i * 10} rx={28 - i * 3.5} ry="3" stroke="currentColor" strokeWidth="1.5" fill="none" />
-      ))}
-    </svg>
-    <span className="text-[22px] font-medium tracking-[-0.01em]">reddot</span>
+const APOverlay = () => (
+  <div className="flex items-center justify-center w-full h-full">
+    <img src="/images/ap-logo.svg" alt="Associated Press" className="w-32 h-32 object-contain" />
   </div>
 );
-
 const JEOverlay = () => (
   <div className="w-[90px] h-[90px] rounded-full bg-[#1a1a1a] flex items-center justify-center">
     <span className="text-white text-[32px]" style={{ fontFamily: "Georgia, serif" }}>JE</span>
@@ -172,7 +165,7 @@ export function PlatformsMediaSection() {
 
           {/* Middle col: 2 media cards */}
           <div className={styles.cardsCol}>
-            <MediaCardItem image="/images/image-1.webp" overlay={<ReddotOverlay />} url="#" />
+            <MediaCardItem overlay={<APOverlay />} url="#" />
             <MediaCardItem image="/images/image-2.webp" overlay={<JEOverlay />} url="#" />
           </div>
 
