@@ -67,7 +67,10 @@ const JEOverlay = () => (
 );
 
 const ForbesOverlay = () => (
-  <span className="text-[40px] font-bold italic tracking-[-0.02em]" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>Forbes</span>
+  <div className="flex items-center justify-center w-full h-full" style={{ position: "relative" }}>
+    <img src="/images/forbes-logo-black.svg" alt="Forbes" className={styles.apLogoBlack} style={{ width: 240, height: 80, objectFit: "contain" }} />
+    <img src="/images/forbes-logo-white.svg" alt="Forbes" className={styles.apLogoWhite} style={{ width: 240, height: 80, objectFit: "contain", position: "absolute" }} />
+  </div>
 );
 
 const FintechTimesOverlay = () => (
