@@ -68,8 +68,8 @@ const JEOverlay = () => (
 
 const ForbesOverlay = () => (
   <div className="flex items-center justify-center w-full h-full" style={{ position: "relative" }}>
-    <img src="/images/forbes-logo-black.svg" alt="Forbes" className={styles.apLogoBlack} style={{ width: 204, height: 79, objectFit: "contain" }} />
-    <img src="/images/forbes-logo-white.svg" alt="Forbes" className={styles.apLogoWhite} style={{ width: 204, height: 79, objectFit: "contain", position: "absolute" }} />
+    <img src="/images/forbes-logo-black.svg" alt="Forbes" className={styles.apLogoBlack} style={{ width: 133, height: 51, objectFit: "contain" }} />
+    <img src="/images/forbes-logo-white.svg" alt="Forbes" className={styles.apLogoWhite} style={{ width: 133, height: 51, objectFit: "contain", position: "absolute" }} />
   </div>
 );
 
