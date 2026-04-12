@@ -61,14 +61,14 @@ const ArrowUpRight = () => (
 
 const APOverlay = () => (
   <div className="flex items-center justify-center w-full h-full" style={{ position: "relative" }}>
-    <img src="/images/ap-logo.svg" alt="Associated Press" className={styles.apLogoBlack} style={{ width: 460, height: 130, objectFit: "contain" }} />
-    <img src="/images/ap-logo-white.svg" alt="Associated Press" className={styles.apLogoWhite} style={{ width: 460, height: 130, objectFit: "contain", position: "absolute" }} />
+    <img src="/images/ap-logo.svg" alt="Associated Press" className={styles.apLogoBlack} style={{ width: 550, height: 155, objectFit: "contain" }} />
+    <img src="/images/ap-logo-white.svg" alt="Associated Press" className={styles.apLogoWhite} style={{ width: 550, height: 155, objectFit: "contain", position: "absolute" }} />
   </div>
 );
 const BloombergOverlay = () => (
   <div className="flex items-center justify-center w-full h-full" style={{ position: "relative" }}>
-    <img src="/images/bloomberg-logo-black.svg" alt="Bloomberg" className={styles.apLogoBlack} style={{ width: 200, height: 40, objectFit: "contain" }} />
-    <img src="/images/bloomberg-logo-white.svg" alt="Bloomberg" className={styles.apLogoWhite} style={{ width: 200, height: 40, objectFit: "contain", position: "absolute" }} />
+    <img src="/images/bloomberg-logo-black.svg" alt="Bloomberg" className={styles.apLogoBlack} style={{ width: 140, height: 28, objectFit: "contain" }} />
+    <img src="/images/bloomberg-logo-white.svg" alt="Bloomberg" className={styles.apLogoWhite} style={{ width: 140, height: 28, objectFit: "contain", position: "absolute" }} />
   </div>
 );
 
