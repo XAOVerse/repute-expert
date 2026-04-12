@@ -39,7 +39,7 @@ export function DigitalReputationSection({
 }: DigitalReputationSectionProps) {
   return (
     <section
-      className="bg-white py-14 lg:py-20"
+      className="bg-white py-8 lg:py-20"
       style={{ fontFamily: "'Roboto', sans-serif" }}
       aria-label="Digital reputation management"
     >
@@ -54,13 +54,13 @@ export function DigitalReputationSection({
               {heading}
             </h2>
 
-            <p className="text-[#444] text-[14px] sm:text-[15px] leading-[1.8] mb-8 text-justify lg:text-left">
+            <p className="text-[#444] text-[14px] sm:text-[15px] leading-[1.8] mb-2 lg:mb-8 text-justify lg:text-left">
               {description}
             </p>
 
             {/* Tags ─ Mobile: short ones 2-per-row, long ones full-width below */}
             {/* Desktop: original natural flex-wrap */}
-            <div className="lg:hidden space-y-2">
+            <div className="hidden">
               {/* 2-col grid for short tags */}
               <div className="grid grid-cols-2 gap-2">
                 {tags.filter((t) => t.length <= 24).map((tag) => (
