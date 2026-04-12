@@ -46,6 +46,11 @@ const DigitalJournalLogo = () => (
   </div>
 );
 
+
+const NBCLogo = () => (
+  <img src="/images/nbc-logo.svg" alt="NBC" style={{ width: 60, height: 24, objectFit: "contain" }} />
+);
+
 const ArrowUpRight = () => (
   <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
     <path d="M7 17L17 7M17 7H7M17 7v10" />
@@ -56,14 +61,14 @@ const ArrowUpRight = () => (
 
 const APOverlay = () => (
   <div className="flex items-center justify-center w-full h-full" style={{ position: "relative" }}>
-    <img src="/images/ap-logo.svg" alt="Associated Press" className={styles.apLogoBlack} style={{ width: 368, height: 104, objectFit: "contain" }} />
-    <img src="/images/ap-logo-white.svg" alt="Associated Press" className={styles.apLogoWhite} style={{ width: 368, height: 104, objectFit: "contain", position: "absolute" }} />
+    <img src="/images/ap-logo.svg" alt="Associated Press" className={styles.apLogoBlack} style={{ width: 460, height: 130, objectFit: "contain" }} />
+    <img src="/images/ap-logo-white.svg" alt="Associated Press" className={styles.apLogoWhite} style={{ width: 460, height: 130, objectFit: "contain", position: "absolute" }} />
   </div>
 );
 const BloombergOverlay = () => (
   <div className="flex items-center justify-center w-full h-full" style={{ position: "relative" }}>
-    <img src="/images/bloomberg-logo-black.svg" alt="Bloomberg" className={styles.apLogoBlack} style={{ width: 120, height: 24, objectFit: "contain" }} />
-    <img src="/images/bloomberg-logo-white.svg" alt="Bloomberg" className={styles.apLogoWhite} style={{ width: 120, height: 24, objectFit: "contain", position: "absolute" }} />
+    <img src="/images/bloomberg-logo-black.svg" alt="Bloomberg" className={styles.apLogoBlack} style={{ width: 200, height: 40, objectFit: "contain" }} />
+    <img src="/images/bloomberg-logo-white.svg" alt="Bloomberg" className={styles.apLogoWhite} style={{ width: 200, height: 40, objectFit: "contain", position: "absolute" }} />
   </div>
 );
 
@@ -89,6 +94,7 @@ const MENTIONS = [
   { logo: <BBCLogo />, name: "BBC", url: "#" },
   { logo: <FOXNewsLogo />, name: "FOX News", url: "#" },
   { logo: <BusinessInsiderLogo />, name: "Business Insider", url: "#" },
+  { logo: <NBCLogo />, name: "NBC", url: "#" },
   { logo: <DigitalJournalLogo />, name: "Digital Journal", url: "#" },
 ];
 
