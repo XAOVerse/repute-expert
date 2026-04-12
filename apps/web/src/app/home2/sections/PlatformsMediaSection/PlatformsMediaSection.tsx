@@ -6,13 +6,13 @@ import styles from "./PlatformsMediaSection.module.css";
 /* ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ SVG Logos ÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂÃÂ¢ÃÂÃÂ */
 
 const CBSLogo = () => (
-  <img src="/images/cbs-logo.svg" alt="CBS" style={{ width: 64, height: 19, objectFit: "contain" }} />
+  <img src="/images/cbs-logo.svg" alt="CBS" style={{ width: 51, height: 15, objectFit: "contain" }} />
 );
 
 const BBCLogo = () => (
   <div className="flex gap-[2px] flex-shrink-0">
     {["B", "B", "C"].map((l, i) => (
-      <span key={i} className="w-[20px] h-[20px] bg-[#1a1a1a] text-white text-[11px] font-bold flex items-center justify-center rounded-[1px]">{l}</span>
+      <span key={i} className="w-[16px] h-[16px] bg-[#1a1a1a] text-white text-[9px] font-bold flex items-center justify-center rounded-[1px]">{l}</span>
     ))}
   </div>
 );
@@ -38,10 +38,10 @@ const BusinessInsiderLogo = () => (
 
 const DigitalJournalLogo = () => (
   <div className="flex items-start gap-[3px]">
-    <span className="inline-block w-[10px] h-[12px] bg-[#b91c1c] rounded-[1px] mt-[2px] flex-shrink-0" />
+    <span className="inline-block w-[9px] h-[11px] bg-[#b91c1c] rounded-[1px] mt-[2px] flex-shrink-0" />
     <div className="flex flex-col leading-none" style={{ fontFamily: "Georgia, 'Times New Roman', serif" }}>
-      <span className="text-[11px] font-bold text-[#1a1a1a] tracking-[-0.01em] leading-[1.1]">DIGITAL</span>
-      <span className="text-[11px] font-bold text-[#1a1a1a] tracking-[-0.01em] leading-[1.1]">JOURNAL</span>
+      <span className="text-[10px] font-bold text-[#1a1a1a] tracking-[-0.01em] leading-[1.1]">DIGITAL</span>
+      <span className="text-[10px] font-bold text-[#1a1a1a] tracking-[-0.01em] leading-[1.1]">JOURNAL</span>
     </div>
   </div>
 );
